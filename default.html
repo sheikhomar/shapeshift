@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>ShapeShift</title>
+    <link href="http://fonts.googleapis.com/css?family=Share" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body">
+    
+    <div id="level-completed">
+      <h1>Level Completed!</h1>
+      <p>Score: <span id="level-completed-score">0</span></p>
+      <button id="next-level-button" class="green">Next Level <i></i></button>
+    </div>
+
+    <div id="level-failed">
+      <h1>Level Failed!</h1>
+      <p>Score: <span id="level-failed-score">0</span></p>
+      <button id="retry-failed-button" class="green"><i></i> Retry Level</button>
+    </div>
+
+
+    <div id="overlay" class="hidden"></div>
+    <div id="container">
+      <div id="stage"></div>
+      <div id="sidebar">
+        <button id="retry-button"><i></i></button>
+        <button id="restart-button"><i></i></button>
+        <div id="score-table">
+          <p><label>Score:</label> <span id="score">0</span></p>
+          <p><label>Best:</label> <span id="high-score">0</span></p>
+          <p><label>Level:</label> <span id="level"></span></p>
+        </div>
+        <div id="game-info"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/kinetic-v4.3.3.min.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/class.js"></script>
+    <script type="text/javascript" src="js/level.js"></script>
+    <script type="text/javascript" src="js/level-1.js"></script>
+    <script type="text/javascript" src="js/level-2.js"></script>
+    <script type="text/javascript" src="js/level-3.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/initializer.js"></script>
+  </body>
+</html>
+
